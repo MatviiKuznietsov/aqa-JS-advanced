@@ -1,4 +1,4 @@
-const averageGrade = 60
+const averageGrade = 100
 switch (true) {
     case (averageGrade < 60):
         console.log('Незадовільно')
@@ -14,6 +14,6 @@ switch (true) {
         break;
     case (averageGrade > 90 && averageGrade <= 100):
         console.log('Відмінно')
-        break;
+    default:console.log('Out of range')
 }
 

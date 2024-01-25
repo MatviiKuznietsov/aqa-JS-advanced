@@ -1,4 +1,4 @@
-const averageGrade = 90
+const averageGrade = 101
 if (averageGrade < 60) {
     console.log('Незадовільно')
 } else if (averageGrade >= 60 && averageGrade <= 70) {
@@ -9,5 +9,7 @@ if (averageGrade < 60) {
     console.log('Дуже добре')
 } else if (averageGrade > 90 && averageGrade <= 100) {
     console.log('Відмінно')
+}else {
+    console.log('out of range')
 }
 

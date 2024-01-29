@@ -1,14 +1,14 @@
 function checkOrder(available, ordered) {
     if (available < ordered) {
-        console.log('Your order is too large, we don’t have enough goods')
+        return 'Your order is too large, we don’t have enough goods'
     } else if (ordered === 0) {
-        console.log('Your order is empty')
+        return 'Your order is empty'
     } else if (ordered <= available) {
-        console.log('Your order is accepted')
+        return 'Your order is accepted'
     }
 }
 
-checkOrder(5, 6)
-checkOrder(5, 0)
-checkOrder(6, 5)
+console.log(checkOrder(5, 6))
+console.log(checkOrder(5, 0))
+console.log(checkOrder(6, 5))
 

@@ -1,6 +1,6 @@
 const showNumber = (num) => {
+    console.log(num)
     if (num > 0) {
-        console.log(num)
         showNumber(num - 1)
     }
 }

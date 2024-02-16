@@ -50,6 +50,7 @@ export default class Book {
     static getOldestBook(books) {
         books.sort((a, b) => a.year - b.year);
         return books[0]
+
     }
 
 }

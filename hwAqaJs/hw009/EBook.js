@@ -27,4 +27,5 @@ export default class EBook extends Book {
     static getEbook(book, fileFormat) {
         return new EBook(book.title, book.author, book.year, fileFormat)
     }
+
 }

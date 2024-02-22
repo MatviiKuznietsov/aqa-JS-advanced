@@ -1,5 +1,5 @@
-function getTextWithDelay (text, milliseconds){
+function printTextWithDelay (text, milliseconds){
     setTimeout(()=>console.log(text), milliseconds)
 }
 
-getTextWithDelay("hello",5000)
+printTextWithDelay("hello",5000)

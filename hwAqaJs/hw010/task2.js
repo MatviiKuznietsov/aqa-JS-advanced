@@ -4,30 +4,23 @@ const idTodo = 1
 const idUser = 1
 
 function getTodo(url, idTodo) {
-    return new Promise((resolve, reject) => {
-        fetch(url + idTodo)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Response fail")
-                }
-                return response.json()
-            })
-            .then(todo => resolve(todo))
-            .catch(error => reject(error))
+    return fetch(url + idTodo)
+        .then(response => {
+        if (!response.ok) {
+            throw new Error("Response fail")
+        }
+        return response.json()
     })
 }
 
+
 function getUsers(url, idUser) {
-    return new Promise((resolve, reject) => {
-        fetch(url + idUser)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Response fail')
-                }
-                return response.json()
-            })
-            .then(user => resolve(user))
-            .catch(error => reject(error))
+    return fetch(url + idUser)
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Response fail')
+        }
+        return response.json()
     })
 }
 

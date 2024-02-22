@@ -3,31 +3,20 @@ const URL_USER = 'https://jsonplaceholder.typicode.com/users/'
 const idTodo = 1
 const idUser = 1
 
-
 async function getTodos(url, idTodo) {
-    try {
-        const response = await fetch(url + idTodo)
-        if (!response.ok) {
-            throw new Error("Response fail")
-        }
-        const todo = await response.json()
-        return todo
-    } catch (error) {
-        throw error
+    const response = await fetch(url + idTodo)
+    if (!response.ok) {
+        throw new Error("Response fail")
     }
+    return await response.json()
 }
 
 async function getUsers(url, idUser) {
-    try {
-        const response = await fetch(url + idUser)
-        if (!response.ok) {
-            throw new Error("Response fail")
-        }
-        const user = await response.json()
-        return user
-    } catch (error) {
-        throw error
+    const response = await fetch(url + idUser)
+    if (!response.ok) {
+        throw new Error("Response fail")
     }
+    return await response.json()
 }
 
 (async () => {

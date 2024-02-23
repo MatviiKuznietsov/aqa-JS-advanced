@@ -1,15 +1,14 @@
-const averageGrade = 101
+const averageGrade = 101;
 if (averageGrade < 60) {
-    console.log('Незадовільно')
+  console.log('Незадовільно');
 } else if (averageGrade >= 60 && averageGrade <= 70) {
-    console.log('Задовільно')
+  console.log('Задовільно');
 } else if (averageGrade > 70 && averageGrade <= 80) {
-    console.log('Добре')
+  console.log('Добре');
 } else if (averageGrade > 80 && averageGrade <= 90) {
-    console.log('Дуже добре')
+  console.log('Дуже добре');
 } else if (averageGrade > 90 && averageGrade <= 100) {
-    console.log('Відмінно')
-}else {
-    console.log('Out of range')
+  console.log('Відмінно');
+} else {
+  console.log('Out of range');
 }
-

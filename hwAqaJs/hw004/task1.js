@@ -1,4 +1,4 @@
-const averageGrade = 101бцукцу
+const averageGrade = 101
 if (averageGrade < 60) {
     console.log('Незадовільно')
 } else if (averageGrade >= 60 && averageGrade <= 70) {
